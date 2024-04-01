@@ -7,8 +7,7 @@ on:
 
 jobs:
   build_and_pub:
-    # Если тесты были пройдены успешно
-    runs-on: [ubuntu-latest]
+    runs-on: ubuntu-latest
     env:
       LOGIN: ${{ secrets.DOCKER_LOGIN }}
       NAME: ${{ secrets.DOCKER_NAME }}
